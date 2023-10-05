@@ -1841,7 +1841,7 @@ button {
   /* border: 2px solid; */
 }
 
-/* .faqs .accordion-header::after {
+.faqs .accordion-header::after {
   content: "\002B";
   color: var(--primary-50, #2194f0);
   font-size: 20px;
@@ -1852,7 +1852,7 @@ button {
 
 .active:after {
   content: "\2212";
-} */
+}
 
 .faq p {
   color: var(--text-gray-90, #18191f);
