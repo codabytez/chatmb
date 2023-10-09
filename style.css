@@ -92,9 +92,9 @@ body {
   background-color: #fff;
   margin-bottom: 50px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 }
