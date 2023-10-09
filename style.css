@@ -21,9 +21,6 @@ h5,
 button {
   cursor: pointer;
 }
-body {
-  padding: 0 10px;
-}
 
 /* Figma Styles of your File */
 :root {
@@ -1886,6 +1883,8 @@ body {
   flex-shrink: 0;
   max-width: 1276px;
   position: relative;
+  margin: auto;
+  width: 100%;
 }
 .faq-section-title {
   color: var(--text-gray-900, #18191f);
@@ -3005,6 +3004,18 @@ body {
 .scroll-to-top:hover {
   background: #054cb6;
   transform: scale(1.1);
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 @media (max-width: 600px) {
