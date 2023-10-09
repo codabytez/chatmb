@@ -21,6 +21,9 @@ h5,
 button {
   cursor: pointer;
 }
+body {
+  padding: 0 10px;
+}
 
 /* Figma Styles of your File */
 :root {
@@ -313,7 +316,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   flex: 1;
-  min-width: 331px;
+  min-width: 300px;
   position: relative;
 }
 .hero-section-text {
@@ -383,7 +386,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex: 1;
-  min-width: 284px;
+  min-width: 244px;
   position: relative;
 }
 .input {
@@ -393,6 +396,10 @@ body {
   position: relative;
   flex: 1;
   outline: 0;
+}
+
+.input::placeholder {
+  opacity: 0.2;
 }
 
 .create-btn-text {
@@ -1491,11 +1498,7 @@ body {
   gap: 0px;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  width: 574.09px;
-  position: absolute;
-  left: 352.08px;
-  top: 8px;
+  width: 500px;
 }
 .feature {
   color: var(--blue-gray-400, #94a3b8);
@@ -1572,6 +1575,7 @@ body {
   height: 517px;
   position: relative;
   box-shadow: var(--sha-box-shadow, 8px 4px 4px 0px rgba(26, 28, 115, 0.05));
+  width: 100%;
 }
 .trans-right-col {
   display: flex;
@@ -1757,7 +1761,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   flex: 1;
-  min-width: 355px;
+  min-width: 300px;
   max-width: 574px;
   position: relative;
   overflow: hidden;
@@ -1770,10 +1774,13 @@ body {
 }
 .gen-image {
   flex-shrink: 0;
-  width: 363px;
+  max-width: 363px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
   height: 560px;
   position: absolute;
-  left: calc(50% - 181px);
+  left: 0;
   top: calc(50% - 280px);
 }
 .faq {
@@ -1825,11 +1832,13 @@ body {
 }
 .faqs {
   border-radius: 16px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
@@ -1842,16 +1851,17 @@ body {
   color: var(--text-gray-90, #18191f);
   font: 500 31.54px/110% "DM Sans", sans-serif;
   font-size: 18px;
+
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 18px;
+  padding-right: 50px;
   cursor: pointer;
   position: relative;
 }
 
-.faqs .accordion-header::before {
-  content: "\002B";
+.faqs .accordion-header::after {
+  content: "\02795";
   color: var(--primary-50, #2194f0);
   font-size: 20px;
   font-weight: bold;
@@ -1860,23 +1870,27 @@ body {
   position: absolute;
   top: 50%;
   right: 18px;
-  transform: translateY(-50%);
 }
 
-/* .active:after {
-  content: "\2212";
-} */
+.active::after {
+  content: "\2796";
+  color: var(--primary-50, #2194f0);
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
 
-.faq p {
+.faqs p {
   color: var(--text-gray-90, #18191f);
   font: 400 19.6px/140% "DM Sans", sans-serif;
   font-size: 14px;
-  padding: 0 18px;
 }
 
-.faq .accordion {
+.faqs .accordion {
   width: 100%;
   max-width: 100%;
+  padding: 31.5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1891,29 +1905,17 @@ body {
   border-bottom: none;
 }
 
-.faq .accordion .accordion-content {
-  position: relative;
-  height: 0;
-  overflow: hidden;
+.panel {
+  /* padding: 0 18px; */
+  display: none;
+  background-color: #fff;
   transition: max-height 0.2s ease-in-out;
 }
 
 .active .accordion-content {
   height: 500px;
   overflow: visible;
-}
-
-.active[] .active .accordion-header::before {
-  content: "\2212";
-  /* color: var(--primary-50, #2194f0);
-  font-size: 20px;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  position: absolute;
-  top: 50%;
-  right: 18px;
-  transform: translateY(-50%); */
+  transition: all 0.3s ease-in-out;
 }
 
 .pricing2 {
@@ -2950,4 +2952,27 @@ body {
 .scroll-to-top:hover {
   background: #054cb6;
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .hero-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 1276px;
+    position: relative;
+    width: 90%;
+  }
+
+  .respond-container {
+    width: 100%;
+  }
+
+  .generate-container {
+    width: 100%;
+  }
 }

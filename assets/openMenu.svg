@@ -1,0 +1,27 @@
+            <svg
+              class="icon-ionicons-outline-menu-outline"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 15C6 14.1716 6.67157 13.5 7.5 13.5H40.5C41.3284 13.5 42 14.1716 42 15C42 15.8284 41.3284 16.5 40.5 16.5H7.5C6.67157 16.5 6 15.8284 6 15Z"
+                fill="#18191F"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 24C6 23.1716 6.67157 22.5 7.5 22.5H40.5C41.3284 22.5 42 23.1716 42 24C42 24.8284 41.3284 25.5 40.5 25.5H7.5C6.67157 25.5 6 24.8284 6 24Z"
+                fill="#18191F"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 33C6 32.1716 6.67157 31.5 7.5 31.5H40.5C41.3284 31.5 42 32.1716 42 33C42 33.8284 41.3284 34.5 40.5 34.5H7.5C6.67157 34.5 6 33.8284 6 33Z"
+                fill="#18191F"
+              />
+            </svg>
