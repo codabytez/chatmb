@@ -219,10 +219,14 @@ body {
     position: relative;
   }
   .topnav.responsive .dropdown .dropbtn {
-    display: block;
     width: 100%;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
+
   .topnav.responsive .buttons-group {
     display: flex;
     flex-direction: column;
