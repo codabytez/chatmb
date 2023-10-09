@@ -11,6 +11,20 @@ for (i = 0; i < accordion.length; i++) {
     } else {
       panel.style.display = "block";
     }
+
+    if (this.classList.contains("active")) {
+      // Code to change the icon to '-' when open
+      console.log("true", this);
+      this.querySelector(".accordion-icon").textContent = "-";
+    } else {
+      // Code to change the icon to '+' when closed
+      this.querySelector(".accordion-icon").textContent = "+";
+    }
+
+    // Toggle the display of the content
+    content.style.display = this.classList.contains("active")
+      ? "block"
+      : "none";
   });
 }
 
